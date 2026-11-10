@@ -352,6 +352,17 @@ main > section + section {
   }
 }
 
+.closing {
+  max-width: 60ch;
+  margin: 32px 0 0;
+  font-size: 1.125rem;
+}
+
+.card p a {
+  text-decoration-color: var(--muted);
+  text-underline-offset: 3px;
+}
+
 /* Footer */
 
 .site-footer {
