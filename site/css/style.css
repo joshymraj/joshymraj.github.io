@@ -201,8 +201,48 @@ main > section + section {
   text-align: center;
 }
 
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgb(0 0 0 / 0.72);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(6px);
+}
+
+.thumb.is-fallback .badge {
+  display: none;
+}
+
 .card-body {
   padding-top: 18px;
+}
+
+/* The latest game spans the full row, with its text beside the thumbnail on wide screens */
+.card--featured {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 900px) {
+  .card--featured {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: clamp(24px, 4vw, 48px);
+    align-items: center;
+  }
+
+  .card--featured .card-body {
+    padding-top: 0;
+  }
+
+  .card--featured h3 {
+    font-size: 1.75rem;
+  }
 }
 
 .card h3 {

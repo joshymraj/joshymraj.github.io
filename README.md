@@ -24,7 +24,8 @@ Then open http://localhost:4173. Use `npm run watch` in another terminal while e
 
 1. Put a thumbnail in `site/assets/`. 16:9 landscape works best.
 2. In `site/index.html`, copy one `<article class="card">` block and change the title, meta line, description, tags and links. Remove any store button the game doesn't have.
-3. Portrait-only screenshots have two options:
+3. To feature the newest game, give its card `class="card card--featured"` and move it to the top of the grid. It then spans the full row, with its text beside the thumbnail on wide screens. For a game that isn't released yet, add `<span class="badge">Coming soon</span>` inside its `.thumb` link.
+4. Portrait-only screenshots have two options:
    - Three side by side: use `class="thumb thumb--strip"`, as on the Fashion Stylist card.
    - One image centred on a blurred copy of itself: use `class="thumb thumb--portrait"`, as on the Dugout Dice card.
 
