@@ -101,6 +101,11 @@ a:focus-visible {
   text-decoration-color: currentColor;
 }
 
+.links a[download]::after {
+  content: " ↓";
+  color: var(--muted);
+}
+
 /* Sections */
 
 main > section + section {
