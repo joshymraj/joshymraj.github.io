@@ -61,7 +61,7 @@ a:focus-visible {
 /* Intro */
 
 .intro {
-  padding-block: clamp(56px, 10vw, 120px) clamp(48px, 7vw, 80px);
+  padding-block: clamp(56px, 10vw, 120px) clamp(32px, 5vw, 48px);
 }
 
 .intro h1 {
