@@ -107,6 +107,10 @@ main > section + section {
   margin-top: clamp(64px, 10vw, 112px);
 }
 
+main > section + .section--compact {
+  margin-top: clamp(32px, 5vw, 48px);
+}
+
 .section-title {
   margin: 0 0 24px;
   font-size: 0.8125rem;
