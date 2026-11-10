@@ -357,8 +357,9 @@ main > section + .section--compact {
 /* Text sections */
 
 .prose {
-  max-width: 60ch;
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .prose p {
