@@ -77,10 +77,36 @@ a:focus-visible {
   color: var(--muted);
 }
 
+.headline {
+  margin: 28px 0 0;
+  font-size: clamp(1.5rem, 3.6vw, 2.5rem);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: justify;
+}
+
+/* Too few words per line on phones; justifying leaves wide gaps */
+@media (max-width: 600px) {
+  .headline {
+    text-align: left;
+  }
+}
+
+/* Full-width intro, justified to the same edges as the games grid */
 .summary {
-  max-width: 56ch;
-  margin: 20px 0 0;
+  margin-top: 24px;
+}
+
+.summary p {
+  margin: 0 0 16px;
   font-size: 1.0625rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.summary p:last-child {
+  margin-bottom: 0;
 }
 
 .links {
