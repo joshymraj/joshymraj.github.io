@@ -358,6 +358,19 @@ main > section + section {
   font-size: 1.125rem;
 }
 
+.prose {
+  max-width: 60ch;
+  font-size: 1.125rem;
+}
+
+.prose p {
+  margin: 0 0 16px;
+}
+
+.prose + .tags {
+  margin-top: 24px;
+}
+
 .card p a {
   text-decoration-color: var(--muted);
   text-underline-offset: 3px;
