@@ -217,6 +217,7 @@ main > section + .section--compact {
 
 /* Set by main.ts when an image fails to load */
 .thumb.is-fallback {
+  text-decoration: none;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
